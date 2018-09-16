@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<style type="text/css">
+			p{font-size: larger; font-weight: bolder;}
+			legend{color:red}
+		</style>
+	</head>
+	<body>
+		<p>填写个人信息</p>
+		<form>
+		<fieldset>
+			<legend>基本信息</legend>
+			<br/>姓名<input type="text" placeholder="请输入姓名" /><br/><br/>
+			年龄<input type="number" min="0" max="100" value="20"/><br/><br/>
+		</fieldset><br/><br/>
+		
+		<fieldset>
+			<legend>你想要在哪里收到邮件？</legend>
+			<br/>邮箱<input type="text" placeholder="请输入邮箱" /><br/><br/>
+		</fieldset><br/><br/>
+		
+		<fieldset>
+			<legend>收入情况</legend>
+			<br/>月收入<input type="number" min="20000" max="10000000" step="1000" value="20000+" /><br/>
+			<br/>银行卡<input type="text" /><br/><br/>
+			有效期<input type="date" /><br/><br/>
+		</fieldset><br/><br/>
+		
+		<fieldset>
+			<legend>选取提交文件</legend>
+			<br/>文件<input type="file" /><br/><br/>
+		</fieldset>
+		<br/><br/>
+		<input type="submit" /><br/><br/>
+		</form>
+	</body>
+</html>

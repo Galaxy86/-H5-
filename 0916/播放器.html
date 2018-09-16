@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>音乐播放器</title>
+		<style type="text/css">
+			header,article{height:60px;width:400px}
+			#div1{background-color: blue; padding: 20px 60px; float: left;}
+			#div2{background-color: gray; padding: 20px 60px; float: left;}
+			ul{padding-left:0px;}
+			li{list-style-type: none;margin:0px;padding-bottom: 15px;}
+			footer{margin-top:100px}
+		</style>
+		<script>
+			function play1(){
+				var audio1=document.getElementById('audio1');
+				var audio=document.getElementById('audio');
+				audio.src=audio1.src;
+				console.log(audio.src)
+			}
+			function play2(){
+				var audio2=document.getElementById('audio2');
+				var audio=document.getElementById('audio');
+				audio.src=audio2.src;
+				console.log(audio.src)
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="div1">
+				<span style="color: white;">在线音乐</span>
+			</div>
+			
+			<div id="div2">
+				<span style="color: white;">本地音乐</span>
+			</div>
+		</header><br />
+		
+		<article>
+			<audio src="01.mp3" id="audio1"></audio>
+			<audio src="02.mp3" id="audio2"></audio>
+			
+			<ul style="float: left;">
+				<li>Stay With Me</li>
+				<li>Love Me Like You Do</li>
+			</ul>
+
+			<ul style="float: right;">
+				<li onclick="play1()" style="color: dodgerblue;text-decoration: underline;cursor: pointer;" >播放</li>
+				<li onclick="play2()" style="color: dodgerblue;text-decoration: underline;cursor: pointer;">播放</li>
+			</ul>
+			
+		</article><br />
+		
+		<footer>
+		<audio src=" " id="audio" controls="controls" style="background-color: gray;" autoplay="autoplay"></audio>
+		</footer>
+	
+	
+	</body>
+</html>
